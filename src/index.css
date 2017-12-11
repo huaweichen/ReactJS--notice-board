@@ -3,7 +3,7 @@
 body,
 html,
 div.board,
-div#react-container {
+div#root {
   height: 100%;
   overflow: hidden;
 }
@@ -14,12 +14,11 @@ body {
 }
 
 div.board {
-  background-color: 'brown';
   width: 100%;
   background: #eab92d;
 }
 
-div.note {
+div.notice {
   height: 150px;
   width: 150px;
   background-color: yellow;
@@ -30,22 +29,22 @@ div.note {
   overflow: hidden;
 }
 
-div.note:active {
+div.notice:active {
   cursor: -webkit-grabbing;
 }
 
-div.note p {
+div.notice p {
   margin: 0;
   font-size: 22px;
   padding: 5px;
   font-family: "Shadows Into Light", Arial;
 }
 
-div.note:hover > span {
+div.notice:hover > span {
   opacity: 1;
 }
 
-div.note > span {
+div.notice > span {
   position: absolute;
   bottom: 2px;
   right: 2px;
@@ -53,11 +52,11 @@ div.note > span {
   transition: opacity .25s linear;
 }
 
-div.note button {
+div.notice button {
   margin: 2px;
 }
 
-div.note > textarea {
+div.notice > textarea {
   height: 75%;
   background: rgba(255, 255, 255, .5);
 }
